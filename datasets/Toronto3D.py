@@ -85,7 +85,7 @@ class Toronto3DDataset(PointCloudDataset):
         self.ignored_labels = np.array([0])
 
         # Dataset folder
-        self.path = '../../Data/Toronto3D'
+        self.path = 'Data/Toronto_3D'
 
         # Type of task conducted on this dataset
         self.dataset_task = 'cloud_segmentation'
@@ -104,7 +104,7 @@ class Toronto3DDataset(PointCloudDataset):
         self.use_potentials = use_potentials
 
         # Path of the training files
-        self.train_path = 'train'
+        self.train_path = 'original_ply'
 
         # List of files to process
         ply_path = join(self.path, self.train_path)
